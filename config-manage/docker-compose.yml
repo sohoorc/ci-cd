@@ -1,0 +1,11 @@
+version: "3"
+services:
+  config_manage_service:
+    user: root
+    restart: always
+    container_name: config_manage_service
+    ports: 
+      - 3000:3000
+    build: .
+    volumes:
+      - ./:/root/nodeapps/config-manage/
